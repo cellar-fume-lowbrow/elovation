@@ -5,6 +5,7 @@
   "keywords": ["rails", "ruby"],
   "success_url": "/",
   "addons": ["heroku-postgresql:hobby-dev"],
+  "stack": "heroku-18",
   "env": {
     "RAILS_ENV": "production",
     "COOKIE_SECRET": {
@@ -34,7 +35,4 @@
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate"
   }
-}
-{
-   "stack": "heroku-18"
 }
